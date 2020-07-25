@@ -53,10 +53,13 @@ Now we will use the above story to understand the key parts of a conversation wh
 
 An Intent is an option from the set of expected objectives a user could have when interacting with someone or a chatbot. Taking the above conversation example, we can see that Cherry had the following set of intentions:
 
-```english
-Confirm name: Hey, Are you Happy?
-
-```
+| Intent | Utterance |
+| --- | --- |
+| Verify name | Hey, Are you Happy? |
+| Confirm name | Yes, I am Happy |
+| Request drink | Can I get a juice? |
+| Verify fruit | Sure, would you like orange? |
+| Confirm fruit | Yes, I love orange |
 
 ## Context
 
