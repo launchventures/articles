@@ -1,11 +1,12 @@
-# Thinking like a chatbot!
+# Thinking like a chatbot
 
-With great power comes great responsibility. And with great traffic comes great conversations, or atleast lots of conversations. One of our ventures in Nigeria has been growing leaps and bounds since we went live in December last year. Along with the user base, the number of people reaching out to the customer support teams has also been growing. And what better opportunity to express my love for automation at this problem.
+With great power comes great responsibility. And with great traffic comes great conversations, or at least lots of conversations. One of our ventures in Nigeria has been growing leaps and bounds since we went live in December last year. Along with the user base, the number of people reaching out to the customer support teams has also been growing. And what better opportunity to express my love for automation at this problem.
 
-I decided to spin up a chatbot. I had a theoretical understanding of how chatbots work but then there is a reason why the word "experience" was invented. I wanted to take this opportunity to not just apply and improve my learning but also to create a lucid guide to understand deeper concepts and best practices in creating chatbots.
+I decided to spin up a chatbot. I had a theoretical understanding of how chat bots work but then there is a reason why the word "experience" was invented. I wanted to take this opportunity to not just apply and improve my learning but also to create a lucid guide to understand deeper concepts and best practices in creating chat bots.
 
-## Basics:
-First the basics. Feel free to skip this section if you understand chatbots WELL. Else no harm spending 10 minutes revising your concepts.
+## Basics
+
+First the basics. Feel free to skip this section if you understand chat bots WELL. Else no harm spending 10 minutes revising your concepts.
 
 A chatbot draws on the concept of how a dialog in a natural language is constructed There are following key concepts in a chatbot:
 
@@ -16,7 +17,7 @@ A chatbot draws on the concept of how a dialog in a natural language is construc
 
 Let's take an example of a dialog between a girl called Cherry and a cafe waiter called Happy (as written on his nameplate).
 
-```
+```english
 Cherry: Hey, Are you Happy?
 
 Happy: Yes, I am Happy.
@@ -43,33 +44,34 @@ Happy: Yes, I am feeling ok.
 
 Cherry: Are you happy?
 
-Happy: Nah actually I am very sad.
+Happy: Nah actually I am sad.
 ```
 
-Now we will use the above story to understand the key parts of a conversaiton which matter in chatbot development.
+Now we will use the above story to understand the key parts of a conversation which matter in chatbot development.
 
 ## Intent
-An Intent is an option from the set of expected objectives a user could have when interacting with someone or a chatbot. Let's see a few examples from the above example. Cherry can have the following set of intentions:
 
-```
-confirm name: Hey, Are you Happy?
+An Intent is an option from the set of expected objectives a user could have when interacting with someone or a chatbot. Taking the above conversation example, we can see that Cherry had the following set of intentions:
+
+```english
+Confirm name: Hey, Are you Happy?
 
 ```
 
 ## Context
-There is something more interesting about this conversation. Both Happy and Cherry answer the same question differently in a different **Context**. Cherry loves orange juice but hates the color orange. Though Happy's question was the same in both situations: `Sure, would you like orange?`, Cherry could understand what he meant. How? Because she remembered what the previous converstion was about and *connected* that conversation with this question to competely comprehend what Happy meant to ask.
 
-This is what Context does it establishes a link between conversations. So we add a set of values as *context* to each time Happy asks `Sure, would you like orange?` then we can complete the picture and present this as a question independent of the history of the conversation.
+There's something more interesting about this conversation. Both Happy and Cherry answer the same question differently in a different **Context**. Cherry loves orange juice but hates the color orange. Though Happy's question was the same in both situations: `Sure, would you like orange?`, Cherry could understand what he meant. How? Because she remembered what the previous conversation was about and *connected* that conversation with this question to completely comprehend what Happy meant to ask.
 
-```
+This is what Context does; it establishes a link between conversations. Hence, if we include a set of values as *context* each time Happy asks `Sure, would you like orange?` then we can complete the picture and present this as a question, without the need to specify the history of the conversation.
+
+```english
 Context 1: Select color, Select utensil
 Statement 1: Sure, would you like orange?
 
 Context 2: Select fruit, Select drink
 Statement 2: Sure, would you like orange?
 ```
+
 As you can see from the statements above, the context helps understand what the statement is about? It can also be seen as a set of play cards which help you retain the complete background of the conversation. It helps the user stay focused on the specific topic or subject the conversation is about.
 
 This was important, hence so much time for this. Once you are clear about Context, what follows is a lot simpler.
-
-
