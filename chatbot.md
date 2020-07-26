@@ -2,7 +2,7 @@
 
 With great power comes great responsibility. And with great traffic comes great conversations, or at least lots of conversations. One of our ventures in Nigeria has been growing leaps and bounds since we went live in December last year. Along with the user base, the number of people reaching out to the customer support teams has also been growing. And what better opportunity to express my love for automation at this problem.
 
-I decided to spin up a chatbot. I had a theoretical understanding of how chat bots work but then there is a reason why the word "experience" was invented. I wanted to take this opportunity to not just apply and improve my learning but also to create a lucid guide to understand deeper concepts and best practices in creating chat bots.
+I decided to spin up a chatbot. I had a theoretical understanding of how chat bots work but then there is a reason why the word "experience" was invented. I wanted to take this opportunity to not just apply and improve my learning but also to create a lucid guide to understand concepts and set best practices for configuring chat bots.
 
 ## Basics
 
@@ -87,6 +87,8 @@ An entity is a parameter within an utterance, which might be useful in describin
 | Verify fruit | Sure, would you like `orange`? | fruit | orange, apple ... |
 | Confirm fruit | Yes, I love `orange` | fruit |
 
+One way to thing about entities is a set of parameters which would help act on an intent. For example, for Requesting a drink, it is important to describe what kind of drink, so that the response can be customized accordingly.
+
 ## Context
 
 There's something more interesting about this conversation. Both Happy and Cherry answer the same question differently in a different **Context**. Cherry loves orange juice but hates the color orange. Though Happy's question was the same in both situations: `Sure, would you like orange?`, Cherry could understand what he meant. How? Because she remembered what the previous conversation was about and *connected* that conversation with this question to completely comprehend what Happy meant to ask.
@@ -105,3 +107,6 @@ As you can see from the statements above, the context helps understand what the 
 
 This was important, hence so much time for this. Once you are clear on the basics, what follows is a lot simpler.
 
+## Events
+
+An event is an alternative to utterances to identify or activate an intent. In a chat bot, a user's utterance is parsed and understood to match an intent. However, we might want to match an intent based on additional events that happen which also are signals of the user's intent.
