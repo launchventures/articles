@@ -10,10 +10,10 @@ First the basics. Feel free to skip this section if you understand chat bots WEL
 
 A chatbot draws on the concept of how a dialog in a natural language is constructed There are following key concepts in a chatbot:
 
-- Context
-- Intent
 - Utterance
+- Intent
 - Entity
+- Context
 
 Let's take an example of a dialog between a girl called Cherry and a cafe waiter called Happy (as written on his nameplate).
 
@@ -49,9 +49,21 @@ Happy: Nah actually I am sad.
 
 Now we will use the above story to understand the key parts of a conversation which matter in chatbot development.
 
+## Utterance
+
+An utterance is a statement made in a natural language by a user. The user may state the same thing in different ways, for instance if we take the first utterance in the conversation above, ```Hey, are you happy?``` It could have variations such as :
+
+```english
+Hey, you Happy?
+Hey, Is your name Happy?
+Are you Happy?
+```
+
+An utterance is the input from which the chatbot needs to understand what the user's motivation is or what they are intending to communicate.
+
 ## Intent
 
-An Intent is an option from the set of expected objectives a user could have when interacting with someone or a chatbot. Taking the above conversation example, we can see that Cherry had the following set of intentions:
+An Intent is an option from the set of expected motivations, a user could have when interacting with someone or a chatbot. Taking the above conversation example, we can see that Cherry had the following set of intentions:
 
 | Intent | Utterance |
 | --- | --- |
@@ -60,6 +72,20 @@ An Intent is an option from the set of expected objectives a user could have whe
 | Request drink | Can I get a juice? |
 | Verify fruit | Sure, would you like orange? |
 | Confirm fruit | Yes, I love orange |
+
+As you can observe, a best practice in naming Intents is to use a `verb + noun` format when applicable. The `noun` is also often an entity which we read about next.
+
+## Entity
+
+An entity is a parameter within an utterance, which might be useful in describing the intent. Its a parameter which can contain different values for the same intent. For example:
+
+| Intent | Utterance | Entity | Entity Values |
+| --- | --- | --- | --- |
+| Verify name | Hey, Are you `Happy`? | name | Happy, Thomas, ... |
+| Confirm name | Yes, I am `Happy` | name |
+| Request drink | Can I get a `juice`? | drink | juice, coffee, tea ... |
+| Verify fruit | Sure, would you like `orange`? | fruit | orange, apple ... |
+| Confirm fruit | Yes, I love `orange` | fruit |
 
 ## Context
 
@@ -77,4 +103,5 @@ Statement 2: Sure, would you like orange?
 
 As you can see from the statements above, the context helps understand what the statement is about? It can also be seen as a set of play cards which help you retain the complete background of the conversation. It helps the user stay focused on the specific topic or subject the conversation is about.
 
-This was important, hence so much time for this. Once you are clear about Context, what follows is a lot simpler.
+This was important, hence so much time for this. Once you are clear on the basics, what follows is a lot simpler.
+
