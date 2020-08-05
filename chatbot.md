@@ -105,6 +105,8 @@ Statement 2: Sure, would you like orange?
 
 As you can see from the statements above, the context helps understand what the statement is about? It can also be seen as a set of play cards which help you retain the complete background of the conversation. It helps the user stay focused on the specific topic or subject the conversation is about.
 
+These are the key elements, however, if you are interested, you could even read on about events.
+
 ## Events
 
 An event is an alternative to utterances to identify or activate an intent. In a chat bot, a user's utterance is parsed and understood to match an intent. However, we might want to match an intent based on certain events that happen which also are a proxy signal of the user's intent. For example, when a user clicks a buy now button on a screen, we can perceive that the user's intent is to buy product. Even though the user hasn't `uttered` anything, we can trigger the chatbot intent from the system which may be configured to make a suggestion to the user such based on the product the user has in their cart. This is achieved by triggering an event and the setting up the specific intents to listen to these events.
